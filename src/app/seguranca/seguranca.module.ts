@@ -1,3 +1,4 @@
+import { SegurancaRoutingModule } from './seguranca-routing.module';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -11,7 +12,8 @@ import {CardModule} from 'primeng/card';
     CommonModule,
     InputTextModule,
     CardModule,
-    FormsModule
+    FormsModule,
+    SegurancaRoutingModule
   ],
   declarations: [LoginFormComponent],
   exports:[LoginFormComponent]
