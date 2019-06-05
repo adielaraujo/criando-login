@@ -1,27 +1,43 @@
-# LoginIntranet
+###Criar o projeito
+ng new login-intranet
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+#Instalar o primeng
+#--save é para salvar no arquivo package.json
+npm install primeng --save
 
-## Development server
+#intalar o primeicons
+npm install primeicons --save
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# NO arquivo angular.json colocar o seguinte código e, "styles":[...]
+#
+# "node_modules/primeicons/primeicons.css",
+#  "node_modules/primeng/resources/themes/nova-light/theme.css",
+#  "node_modules/primeng/resources/primeng.min.css",
+#  //...
 
-## Code scaffolding
+#INSTALAR O BOOTSTRAP
+npm install --save bootstrap@4.3.1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#Instalar extensoes no vc code
+#TSLint 1.1.0 da microsoft
+#EditorConfig for VS Code 0.13.0
+#HTML Snippets 0.2.1 da Mohamed Abusaid
+#Auto Import  1.5.3 da steoates
 
-## Running unit tests
+#Adicionando  um modulo 
+#Adicionar o modulo segurança
+ng g m seguranca
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#Adicionar o modulo login-form
+#--spec=false para não criar classe de teste
+ng g c seguranca/login-form --spec=false
 
-## Running end-to-end tests
+#Criando o serviço de segurança
+ng g s seguranca/auth --spec=false
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#Adicionar o modulo core
+ng g m core
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### parei para estudar o core model
